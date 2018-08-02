@@ -3,10 +3,10 @@ x = 0
 -- end don't touch it
 
 -- pride flag drawer
--- (public domain) 2018 ry00001/Hazel
+-- (public domain) 2018 ry00001/hazel
 -- made probably maybe for gssp but idk
 
-text = "hello!"
+text = "hello everyone!"
 -- change this to change
 -- the text that scrolls
 -- by at the bottom of the
@@ -35,7 +35,7 @@ function _draw()
 
 	for i=1,#data do
 		local d = data[i]
-		for j=0,128 do
+		for j=0,128,8 do
 			spr(d.s, j, (d.p*8)+20)
 		end
 	end
@@ -44,6 +44,6 @@ end
 function _update()
 	x = x+1
 	if x > 128 then
-		x = -64
+		x = -#text*5
 	end
 end
