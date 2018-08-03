@@ -5,11 +5,6 @@ __lua__
 -- (public domain) 2018 ry00001/hazel
 -- made probably maybe for gssp but idk
 
-text = "this text scrolls!"
--- change this to change
--- the text that scrolls
--- by at the bottom of the
--- screen.
 data = {
 	{flag={
 		{s=1,p=-2},
