@@ -51,6 +51,7 @@ function calctext(txt)
 	return -#txt*5
 end
 
+text=""
 x = calctext(text)
 index=1
 infot = "push ⬅️➡️ to switch flags"
